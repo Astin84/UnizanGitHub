@@ -167,7 +167,7 @@ session_start();
 <div class="container">
     <article>
         <h2>Usecase Diagram</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur euismod, nisi nisi aliquam nisi, quis euismod nisi nisi vitae nisi.</p>
+        <p>نمودار **موارد استفاده** ابزاری برای نمایش عملکردهای مختلف سیستم از دیدگاه کاربران است. این نمودار شامل دو بخش اصلی می‌شود</p>
         <nav>
         <a href="usecase.php">Read More...</a>
         </nav>
@@ -175,7 +175,7 @@ session_start();
 
     <article>
         <h2>Activity Diagram</h2>
-        <p>Suspendisse potenti. Nulla facilisi. Vivamus facilisis augue nec semper vestibulum. Phasellus euismod massa eu metus tincidunt, vitae malesuada justo facilisis.</p>
+        <p>نمودار **فعالیت** یکی از ابزارهای گرافیکی است که جریان فرآیندها و فعالیت‌های مختلف سیستم را به صورت بصری نمایش می‌دهد. این نمودار به طراحان کمک می‌کند تا روند اجرای یک فرآیند را بهتر درک کنند و نقاط کلیدی آن را شناسایی کنند</p>
         <nav>
         <a href="activity.php">Read More...</a>
         </nav>
@@ -183,7 +183,7 @@ session_start();
 
     <article>
         <h2>Class Diagram</h2>
-        <p>Suspendisse potenti. Nulla facilisi. Vivamus facilisis augue nec semper vestibulum. Phasellus euismod massa eu metus tincidunt, vitae malesuada justo facilisis.</p>
+        <p>نمودار **کلاس** یکی از انواع نمودارهای ساختاری در UML است که ساختار کلی سیستم را از طریق نمایش کلاس‌ها، ویژگی‌ها، عملیات، و روابط بین آن‌ها نشان می‌دهد. این نمودار به طور گسترده در طراحی سیستم‌های شیءگرا استفاده می‌شود</p>
         <nav>
         <a href="class.php">Read More...</a>
         </nav>
@@ -191,7 +191,7 @@ session_start();
 
     <article>
         <h2>Sequence Diagram</h2>
-        <p>Nam vel dapibus nunc. Nulla aliquet augue ut sapien venenatis, a vehicula risus condimentum. In auctor lectus sed enim fermentum, ut consequat ex pharetra.</p>
+        <p>نمودار **توالی** یکی از نمودارهای مهم در UML است که نحوه تعامل اشیا را در یک سناریوی خاص نمایش می‌دهد. این نمودار ترتیب زمانی پیام‌ها و تعاملات بین اشیا را نشان می‌دهد</p>
         <nav>
         <a href="sequence.php">Read More...</a>
         </nav>
@@ -199,7 +199,7 @@ session_start();
 
     <article>
         <h2>Machine Diagram</h2>
-        <p>Nam vel dapibus nunc. Nulla aliquet augue ut sapien venenatis, a vehicula risus condimentum. In auctor lectus sed enim fermentum, ut consequat ex pharetra.</p>
+        <p>نمودار **ماشین حالت** ابزاری برای نمایش تغییر وضعیت‌های یک شیء یا سیستم در طول چرخه حیات آن است. این نمودار شامل عناصر زیر است</p>
         <nav>
         <a href="machine.php">Read More...</a>
         </nav>
