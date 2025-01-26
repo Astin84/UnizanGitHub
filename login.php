@@ -48,20 +48,20 @@ require_once('config/loader.php');
             <?php if(isset($_GET['notuser'])) { ?>
               <p style="width:100%" class="alert alert-danger">User not found!</p>
             <?php }else if(isset($_GET['loginned'])){ ?>
-              <p style="width:100%" class="alert alert-success">Lagin to website!</p>
+              <p style="width:100%" class="alert alert-success">Login to website!</p>
             <?php } ?>
       </form>
     </div>
     <div class="toggle-container">
       <div class="toggle">
         <div class="toggle-panel toggle-left">
-          <h1>Welcome Back!</h1>
-          <p>Enter your Personal details to use all of site features</p>
+          <h1>Welcome to UNIZAN!</h1>
+          <p>Enter your Personal details to use all of Unizan features</p>
           <button class="hidden" id="login">Sign In</button>
         </div>
         <div class="toggle-panel toggle-right">
-          <h1>Hello, Friend!</h1>
-          <p>Register with your Personal details to use all of site features</p>
+          <h1> Say Hello to UNIZAN!</h1>
+          <p>Register with your Personal details to use all of Unizan features</p>
           <button class="hidden" id="register">Sign Up</button>
         </div>
       </div>

@@ -16,7 +16,7 @@ if(isset($_POST['signup'])){
         // sql
         $query = "INSERT INTO users SET username=?, password=?, mobile=?, email=?";
         
-        // stmt
+        // statement
         $stmt = $conn->prepare($query);
 
         // bind
@@ -25,7 +25,7 @@ if(isset($_POST['signup'])){
         $stmt->bindValue(3, $mobile);
         $stmt->bindValue(4, $email);
 
-        // exe
+        // execute
         $stmt->execute();
 
         echo "Created Account";

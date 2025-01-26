@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['login']) || $_SESSION['role'] !== 'writer') {
+if (!isset($_SESSION['login']) || $_SESSION['role'] !== 'user') {
     header('Location: ../index.php');
     exit();
 }
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" description="width=device-width, initial-scale=1.0">
-    <title>Writer Panel</title>
+    <title>User Panel</title>
     <link href="https://fonts.googleapis.com/css2?family=Shabnam&display=swap" rel="stylesheet">
     <style>
         * {
@@ -217,7 +217,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 <body>
 
 <header>
-    <h1>Writer Panel</h1>
+    <h1>User Panel</h1>
 </header>
 
 <nav>

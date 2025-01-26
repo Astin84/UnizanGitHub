@@ -25,11 +25,23 @@ session_start();
 
         header {
             background: linear-gradient(135deg, #8a2be2, #7a2ee2); /* بنفش */
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 80px;
+    height: auto;
+}
+        
 
         header h1 {
             font-size: 2.5rem;
@@ -141,6 +153,7 @@ session_start();
 <body>
 
 <header>
+    <img src="bahonar_logo.png" alt="Bahonar University Logo" class="header-logo">
     <h1>Unizan</h1>
 </header>
 
@@ -202,6 +215,14 @@ session_start();
         <p>نمودار **ماشین حالت** ابزاری برای نمایش تغییر وضعیت‌های یک شیء یا سیستم در طول چرخه حیات آن است. این نمودار شامل عناصر زیر است</p>
         <nav>
         <a href="machine.php">Read More...</a>
+        </nav>
+    </article>
+
+    <article>
+        <h2>نظرسنجی کتابخانه دانشگاه</h2>
+        <p>نمودار **ماشین حالت** ابزاری برای نمایش تغییر وضعیت‌های یک شیء یا سیستم در طول چرخه حیات آن است. این نمودار شامل عناصر زیر است</p>
+        <nav>
+        <a href="votelib.php">Read More...</a>
         </nav>
     </article>
 </div>

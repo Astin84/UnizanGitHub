@@ -101,6 +101,33 @@ session_start();
             color: #800080;
         }
 
+        .rating-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .rating-stars label {
+            cursor: pointer;
+            font-size: 2rem;
+            color: #ddd;
+            transition: color 0.3s;
+        }
+
+        .rating-stars input {
+            display: none;
+        }
+
+        .rating-stars input:checked ~ label,
+        .rating-stars input:checked ~ label ~ label {
+            color: #800080;
+        }
+
         .comments-section {
             margin-top: 30px;
         }
@@ -175,7 +202,7 @@ session_start();
 <div class="container">
     <article>
         <h2>توضیحات نمودار توالی (Sequence Diagram):</h2>
-        <img src="sequence.jpeg" alt="Sequence Diagram Example" class="image-center">
+        <img src="images/sequence.jpeg" alt="Sequence Diagram Example" class="image-center">
         <div class="diagram-desc">
             <p class="diagram-title">نمودار توالی (Sequence Diagram) چیست؟</p>
             <p>
@@ -198,6 +225,25 @@ session_start();
             </p>
         </div>
     </article>
+
+    <div class="rating-section">
+        <h3>امتیاز شما:</h3>
+        <form action="submit_rating.php" method="POST">
+            <div class="rating-stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <button type="submit">ارسال امتیاز</button>
+        </form>
+    </div>
 
     <div class="comments-section">
         <h3>ارسال نظر:</h3>

@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine</title>
+    <title>Library Issues</title>
     <style>
         body {
             font-family: Shabnam, sans-serif;
@@ -88,17 +88,6 @@ session_start();
             margin: 20px auto;
             width: 60%;
             border-radius: 8px;
-        }
-
-        .diagram-desc {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        .diagram-title {
-            font-size: 1.3rem;
-            color: #800080;
         }
 
         .rating-section {
@@ -201,29 +190,78 @@ session_start();
 
 <div class="container">
     <article>
-        <h2>توضیحات نمودار ماشین حالت (State Machine Diagram):</h2>
-        <img src="images/machine.jpeg" alt="State Machine Diagram Example" class="image-center">
-        <div class="diagram-desc">
-            <p class="diagram-title">نمودار ماشین حالت (State Machine Diagram) چیست؟</p>
-            <p>
-                نمودار **ماشین حالت** ابزاری برای نمایش تغییر وضعیت‌های یک شیء یا سیستم در طول چرخه حیات آن است. این نمودار شامل عناصر زیر است:
-            </p>
-            <ul>
-                <li><strong>حالت‌ها (States):</strong> وضعیت‌های مختلفی که یک شیء می‌تواند در آن قرار داشته باشد، مانند "در انتظار تایید" یا "منتشر شده".</li>
-                <li><strong>رویدادها (Events):</strong> تغییراتی که باعث انتقال بین حالت‌ها می‌شوند، مانند "ثبت پست" یا "تایید پست".</li>
-                <li><strong>انتقال‌ها (Transitions):</strong> خطوطی که نشان‌دهنده حرکت از یک حالت به حالت دیگر هستند.</li>
-            </ul>
-            <p>
-                نمودارهای ماشین حالت معمولاً برای مدل‌سازی رفتار داخلی سیستم‌ها و اشیاء پیچیده استفاده می‌شوند. در اینجا نمونه‌ای از کاربردهای این نمودار در سیستم وبلاگ آورده شده است:
-            </p>
-            <ul>
-                <li>یک پست ممکن است از حالت "پیش‌نویس" به حالت "منتشر شده" منتقل شود.</li>
-                <li>کاربران ممکن است از حالت "غیرفعال" به حالت "فعال" تغییر کنند.</li>
-            </ul>
-            <p>
-                این نمودارها برای طراحی سیستم‌هایی با رفتارهای پویا و پیچیده بسیار مفید هستند.
-            </p>
-        </div>
+        <h2>خرابی صندلی‌های کتابخانه</h2>
+        <p>
+            یکی از مشکلات اساسی در کتابخانه، خرابی صندلی‌ها است. این مشکل باعث کاهش راحتی کاربران شده و ممکن است برخی از افراد را از استفاده از کتابخانه منصرف کند. پیشنهاد می‌شود که تعمیر یا تعویض صندلی‌ها در اولویت قرار گیرد.
+        </p>
+    </article>
+
+    <div class="rating-section">
+        <h3>امتیاز شما:</h3>
+        <form action="submit_rating.php" method="POST">
+            <div class="rating-stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <button type="submit">ارسال امتیاز</button>
+        </form>
+    </div>
+
+    <div class="comments-section">
+        <h3>ارسال نظر:</h3>
+        <form action="submit_comment.php" method="POST">
+            <textarea name="comment" placeholder="نظر خود را بنویسید..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <article>
+        <h2>اشکال در سیستم برق کتابخانه</h2>
+        <p>
+            اشکالات مکرر در سیستم برق کتابخانه باعث ایجاد اختلال در استفاده از تجهیزات الکترونیکی می‌شود. رفع این مشکل می‌تواند به بهبود تجربه کاربران و جلوگیری از آسیب به تجهیزات کمک کند.
+        </p>
+    </article>
+
+    <div class="rating-section">
+        <h3>امتیاز شما:</h3>
+        <form action="submit_rating.php" method="POST">
+            <div class="rating-stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <button type="submit">ارسال امتیاز</button>
+        </form>
+    </div>
+
+    <div class="comments-section">
+        <h3>ارسال نظر:</h3>
+        <form action="submit_comment.php" method="POST">
+            <textarea name="comment" placeholder="نظر خود را بنویسید..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <article>
+        <h2>در‌ها و پریزهای برق واقع در کف کتابخانه خراب است</h2>
+        <p>
+            پریزها و درهای برق در کف کتابخانه به دلیل خرابی یا آسیب قابل استفاده نیستند. تعمیر این موارد می‌تواند به کاربران کمک کند تا بدون نگرانی از امکانات برقی استفاده کنند.
+        </p>
     </article>
 
     <div class="rating-section">

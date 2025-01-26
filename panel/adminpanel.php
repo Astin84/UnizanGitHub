@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         }
     }
 
-    // Here, you would normally save the article data and image path to your database
+    // save the article data and image path to database
     echo "<div class='notification'>Article posted successfully! Title: $title</div>";
     if ($image) {
         echo "<div class='notification'>Image uploaded: <img src='$image' width='200' alt='Article Image'></div>";
@@ -74,11 +74,6 @@ if (isset($_POST['submit'])) {
         $description = $_POST['description'];
         $image = basename($_FILES["image"]["name"]);
         $writer_id = $_POST['writer'];
-
-        if ($writer_id == "") {
-            echo "Please select a writer";
-            $uploadOk = false;
-        }
 
         if ($uploadOk) {
             $query = "INSERT INTO `posts` SET title=?, description=?, image=?, writer_id=?";

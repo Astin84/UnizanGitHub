@@ -40,7 +40,7 @@ if(isset($_POST['signin'])){
             header('Location: ../login.php?notuser=ok');
         }
 
-        // echo "Created Account";
+        // echo "Successfully loged in";
         // header('Location: ../index.php');
     }catch(PDOException $e){
         echo "Your error message is : " . $e->getMessage();
